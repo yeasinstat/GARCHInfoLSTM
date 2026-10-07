@@ -1,0 +1,38 @@
+Package: GARCHInfoLSTM
+Type: Package
+Title: GARCH-Informed LSTM Model for Volatility Forecasting
+Version: 0.1.0
+Authors@R: c(
+    person(
+        given = "Md",
+        family = "Yeasin",
+        role = "aut"
+    ),person(
+        given = "Ranjit Kumar",
+        family = "Paul",
+        email = "ranjitstat@gmail.com",
+        role = c("aut", "cre")
+    ),person(
+        given = "Manojit",
+        family = "Mandal",
+        role = "aut"
+    ),person(
+        given = "Pushkar",
+        family = "Bora",
+        role = "aut"
+    ))
+Description: The proposed Generalized Autoregressive Conditional Heteroskedasticity (GARCH)-informed Long Short-Term Memory (LSTM) model follows the concept of physics-informed machine learning (PIML) by integrating established econometric knowledge of price volatility into a data-driven forecasting framework. In the model, conditional volatility estimated from the GARCH process is incorporated as an additional explanatory signal or volatility-based weighting component within the LSTM architecture. This enables the LSTM to learn nonlinear temporal dependencies while remaining informed by the underlying characteristics of agricultural price series, including volatility clustering, heteroscedasticity and market uncertainty. The optimized weighting parameter, lambda, controls the contribution of the GARCH-derived volatility information to the final prediction. Thus, the model combines the statistical interpretability of GARCH with the nonlinear learning capability of LSTM, producing a hybrid PIML framework that is more responsive to both normal price movements and periods of extreme market volatility. The methodology is motivated by hybrid forecasting framework proposed by Yeasin and Paul (2024) <doi:10.1007/s11227-023-05542-3>.
+Encoding: UTF-8
+Imports: torch (>= 0.11.0), rugarch (>= 1.5.0), ggplot2 (>= 3.4.0), cli
+        (>= 3.6.0), coro, stats, utils
+License: MIT + file LICENSE
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-09-08 11:41:08 UTC; YEASIN
+Author: Md Yeasin [aut],
+  Ranjit Kumar Paul [aut, cre],
+  Manojit Mandal [aut],
+  Pushkar Bora [aut]
+Maintainer: Ranjit Kumar Paul <ranjitstat@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-09-21 20:50:08 UTC
